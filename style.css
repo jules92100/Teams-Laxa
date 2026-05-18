@@ -113,6 +113,7 @@ nav {
   padding: 8px 18px;
   border-radius: 8px;
   transition: background 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
 }
 
 .btn-nav-cta:hover {
@@ -194,6 +195,7 @@ h1 .grad {
   gap: 16px;
   justify-content: center;
   margin-bottom: 64px;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -204,6 +206,7 @@ h1 .grad {
   font-weight: 500;
   text-decoration: none;
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .btn-primary {
@@ -670,23 +673,82 @@ footer {
 
 .reveal.visible {
   opacity: 1;
-  transform: translateY(0);/* 1. On stoppe TOUTES les animations et transitions CSS */
-*, *::before, *::after {
-    animation: none !important;
-    transition: none !important;
-    scroll-behavior: auto !important;
+  transform: translateY(0);
 }
 
-/* 2. On empêche les éléments de déborder et de créer des secousses de scroll */
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-    position: relative;
-}
 
-/* 3. Optionnel : Si tu as des images ou vidéos qui changent de taille et font sauter le layout */
-img, video {
-    max-width: 100%;
-    height: auto;
-    
+/* ==========================================
+   🚨 ZONE COMPATIBILITÉ MOBILE (MEDIA QUERIES)
+   ========================================== */
+
+@media (max-width: 768px) {
+  /* Fix de la barre de navigation qui déborde */
+  nav {
+    padding: 12px 20px;
+  }
+  
+  /* On cache ou réduit les liens pour éviter que ça se rentre dedans */
+  .nav-links li:not(:last-child) {
+    display: none; /* Cache Accueil, Fonctions, Statut sur téléphone pour garder de la place */
+  }
+  
+  .btn-nav-cta {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  /* Fix de la zone principale (Hero) */
+  #hero {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 2.2rem; /* Titre plus petit sur téléphone */
+  }
+
+  .hero-sub {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  /* Transformation de la barre de statistiques (2x2 au lieu de tout en ligne) */
+  .stats-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 12px;
+  }
+  
+  .stat-item {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 15px;
+  }
+  
+  .stat-item:nth-child(odd) {
+    border-right: 1px solid var(--border);
+  }
+  
+  .stat-item:nth-child(3), .stat-item:nth-child(4) {
+    border-bottom: none;
+  }
+
+  /* Ajustements des sections */
+  section {
+    padding: 60px 0;
+  }
+
+  .feat-highlight-text {
+    padding: 24px;
+  }
+
+  .feat-highlight-demo {
+    padding: 20px;
+  }
+
+  .status-embed {
+    padding: 24px;
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
