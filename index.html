@@ -1,61 +1,165 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site officiel et vitrine de notre projet.">
-    <title>Projet Laxo | Accueil</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laxa — Le bot Discord RP français complet</title>
+  <meta name="description" content="Laxa est le compagnon ultime pour votre serveur Discord Roleplay. Gestion d'entreprises, support vocal automatisé, IA contextuelle et système DarkNet." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Laxo</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="mentions-légales.html">Mentions Légales</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <h1>Bienvenue dans la nouvelle ère.</h1>
-            <p>Une interface plus claire, plus rapide et entièrement respectueuse de vos données.</p>
-            <a href="#about" class="btn">Découvrir</a>
-        </section>
+  <nav>
+    <a href="#hero" class="nav-logo">
+      <span>Laxa</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#hero">Accueil</a></li>
+      <li><a href="#features">Fonctionnalités</a></li>
+      <li><a href="#statut">Statut</a></li>
+      <li><a href="https://discord.gg/3htBGbzNte" target="_blank">Discord</a></li>
+      <li><a href="https://discord.com/oauth2/authorize?client_id=1488207460841029772" target="_blank" class="btn-nav-cta">Inviter Laxa</a></li>
+    </ul>
+  </nav>
 
-        <section id="about" class="content-section">
-            <h2>Notre Mission</h2>
-            <p>Nous concevons des espaces numériques sécurisés et performants. Zéro compromis sur la qualité, zéro faille sur la confidentialité.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Projet Laxo. Tous droits réservés.</p>
-    </footer>
-
-    <div id="cookie-banner" class="cookie-banner">
-        <p>Ce site utilise des cookies strictly nécessaires pour fonctionner. En continuant, vous acceptez notre <a href="mentions-légales.html">politique de confidentialité</a>. Promis, on ne revend pas vos données pour acheter des chouquettes.</p>
-        <button id="accept-cookies" class="btn">J'ai compris</button>
+  <section id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Bot en ligne · discord.py 2.7 · MySQL
     </div>
+    <h1>Le bot Discord<br /><span class="grad">RP français</span></h1>
+    <p class="hero-sub">Entreprises, support vocal automatisé, IA contextuelle, DarkNet — tout en slash commands pour vos communautés RP.</p>
+    
+    <div class="hero-actions">
+      <a href="https://discord.com/oauth2/authorize?client_id=1488207460841029772" target="_blank" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px; vertical-align: middle;"><path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.369-.444.85-.608 1.23a18.566 18.566 0 0 0-5.487 0 12.36 12.36 0 0 0-.617-1.23A.077.077 0 0 0 8.562 3c-1.714.29-3.354.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 0 0 .031.055 20.03 20.03 0 0 0 5.993 2.98.078.078 0 0 0 .084-.026c.462-.62.874-1.275 1.226-1.963.021-.04.001-.088-.041-.104a13.201 13.201 0 0 1-1.872-.878.075.075 0 0 1-.008-.125c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.764 8.18 1.764 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.075.075 0 0 1-.006.125c-.598.344-1.22.635-1.873.877a.075.075 0 0 0-.041.105c.36.687.772 1.341 1.225 1.962a.077.077 0 0 0 .084.028 19.963 19.963 0 0 0 6.002-2.981.076.076 0 0 0 .032-.054c.5-5.094-.838-9.52-3.549-13.442a.06.06 0 0 0-.031-.028z"/></svg>
+        Inviter le bot
+      </a>
+      <a href="https://discord.gg/3htBGbzNte" target="_blank" class="btn btn-ghost">Rejoindre le Support</a>
+    </div>
+    
+    <div class="stats-bar">
+      <div class="stat-item"><div class="stat-num">16</div><div class="stat-label">Modules</div></div>
+      <div class="stat-item"><div class="stat-num">30+</div><div class="stat-label">Commandes</div></div>
+      <div class="stat-item"><div class="stat-num">24/7</div><div class="stat-label">Uptime</div></div>
+      <div class="stat-item"><div class="stat-num">MySQL</div><div class="stat-label">Database</div></div>
+    </div>
+  </section>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const banner = document.getElementById("cookie-banner");
-            const acceptBtn = document.getElementById("accept-cookies");
+  <section id="features">
+    <div class="container">
+      <span class="section-tag">✦ Module Premium</span>
+      <h2>L'excellence pour votre serveur</h2>
+      <p class="section-desc">Un système robuste et complet pensé exclusivement pour les communautés et serveurs Rôleplay.</p>
 
-            if (!localStorage.getItem("rgpd_consent")) {
-                setTimeout(() => {
-                    banner.classList.add("show");
-                }, 500);
-            }
+      <div class="feat-highlight reveal">
+        <div class="feat-highlight-text">
+          <span class="section-tag">🎙️ Innovation</span>
+          <h3>Salons Vocaux Intelligents</h3>
+          <p>Dès qu'un joueur se connecte au salon d'attente, Laxa l'enregistre en base de données, joue une annonce audio personnalisée, le place dans la file d'attente et alerte instantanément les équipes de modération disponibles.</p>
+          <div class="feat-badges-group">
+            <span class="feat-badge">Annonces MP3</span>
+            <span class="feat-badge">File active dynamique</span>
+          </div>
+        </div>
+        <div class="feat-highlight-demo">
+          <div class="discord-mock">
+            <div class="dm-header"><span class="dm-name">LaxaBOT</span><span class="dm-tag">BOT</span></div>
+            <div class="dm-embed">
+              <div class="dm-embed-title">🚨 Demande de Support active</div>
+              <div class="dm-field"><span class="dm-field-name">👤 Utilisateur :</span> <span class="dm-field-val">Alex MARTIN</span></div>
+              <div class="dm-field"><span class="dm-field-name">⏳ Attente :</span> <span class="dm-field-val">En cours...</span></div>
+              <div class="dm-buttons">
+                <button class="dm-btn dm-btn-green">✅ Prendre en charge</button>
+                <button class="dm-btn dm-btn-red">❌ Clôturer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-            acceptBtn.addEventListener("click", () => {
-                localStorage.setItem("rgpd_consent", "true");
-                banner.classList.remove("show");
-            });
-        });
-    </script>
+      <div class="features-grid">
+        <div class="feat-card reveal">
+          <div class="feat-icon">🏢</div>
+          <div class="feat-title">Sociétés & Économie</div>
+          <p class="feat-desc">Créez et gerez des entreprises virtuelles. Attribuez des rôles de PDG, de gérants ou d'employés et suivez l'activité commerciale globale.</p>
+        </div>
+        <div class="feat-card reveal">
+          <div class="feat-icon">🕵️‍♂️</div>
+          <div class="feat-title">Réseau DarkNet</div>
+          <p class="feat-desc">Intégrez un canal anonyme sécurisé pour vos joueurs avec un système d'envoi de messages cryptés et éphémères.</p>
+        </div>
+        <div class="feat-card reveal">
+          <div class="feat-icon">🧠</div>
+          <div class="feat-title">IA Contextuelle</div>
+          <p class="feat-desc">Des réponses intelligentes basées sur le contexte de votre univers RP pour guider et animer automatiquement les salons de discussion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="statut">
+    <div class="container">
+      <span class="section-tag">📡 Disponibilité</span>
+      <h2>Moniteur des Services</h2>
+      <div class="status-embed reveal">
+        <div class="status-left">
+          <h3>Indicateurs d'infrastructure</h3>
+          <p>Nos infrastructures et connexions à l'API Discord sont analysées en continu afin d'assurer une réactivité optimale et aucun ralentissement lors de vos sessions de jeu.</p>
+          <div style="margin-top:24px;">
+            <a href="https://laxa.upbot.app/" target="_blank" class="btn btn-primary">Page de statut complète →</a>
+          </div>
+        </div>
+        <div class="status-indicators">
+          <div class="status-row">
+            <span class="status-dot online"></span>
+            <span class="status-name">Instance Centrale du Bot</span>
+            <span class="status-val text-online">Opérationnel</span>
+          </div>
+          <div class="status-row">
+            <span class="status-dot online"></span>
+            <span class="status-name">Cluster de données MySQL</span>
+            <span class="status-val text-online">En ligne</span>
+          </div>
+          <div class="status-row">
+            <span class="status-dot online"></span>
+            <span class="status-name">Passerelle Vocale (Audio streaming)</span>
+            <span class="status-val text-online">Opérationnel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">Laxa Bot</div>
+      <p class="footer-copy">© 2026 Laxa · Développé avec soin pour l'écosystème francophone · Propulsé par discord.py</p>
+      <p class="footer-links"><a href="#mentions-legales">Mentions Légales & RGPD</a></p>
+    </div>
+  </footer>
+
+  <div id="mentions-legales" class="modal">
+    <div class="modal-box">
+      <a href="#close" class="modal-close">×</a>
+      <h3>Mentions Légales & RGPD</h3>
+      <div class="modal-scroll-area">
+        <h4>1. Collecte des données</h4>
+        <p>Laxa enregistre uniquement l'identifiant unique d'utilisateur Discord (User ID) et les configurations de serveurs nécessaires au bon traitement des modules d'entreprises et de file d'attente vocale.</p>
+        <h4>2. Stockage & Sécurité</h4>
+        <p>Toutes les informations sont stockées au sein d'une base de données MySQL sécurisée et chiffrée. Aucune revente de données n'est effectuée.</p>
+        <h4>3. Utilisation Responsable</h4>
+        <p>L'utilisation des modules (notamment le DarkNet anonyme) doit respecter scrupuleusement la charte d'utilisation de Discord. Tout abus entraînera un bannissement irrévocable de l'infrastructure Laxa.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
