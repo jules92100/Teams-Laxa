@@ -670,5 +670,23 @@ footer {
 
 .reveal.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0);/* 1. On stoppe TOUTES les animations et transitions CSS */
+*, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+}
+
+/* 2. On empêche les éléments de déborder et de créer des secousses de scroll */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* 3. Optionnel : Si tu as des images ou vidéos qui changent de taille et font sauter le layout */
+img, video {
+    max-width: 100%;
+    height: auto;
+    
 }
